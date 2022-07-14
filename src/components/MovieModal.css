@@ -1,0 +1,85 @@
+.modal {
+  border-radius: 0;
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 2;
+}
+.modalContainer {
+  
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+  width: 380px;
+  height: 600px;
+  overflow: hidden;
+  background-color: white;
+  padding: 30px;
+}
+.modalInner {
+  height: 540px;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+.modalContainer button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 5px 10px;
+  background-color: inherit;
+  border-radius: 0;
+  border: none;
+  font-size: 1.2em;
+}
+.modalContainer button:hover {
+  transform: scale(1.1);
+  font-weight: bold;
+  color: orangered;
+  cursor: pointer;
+}
+.modalContainer h1 {
+  font-size: 25px;
+  margin-bottom: 0;
+}
+
+.modalContainer h2 {
+  font-family: 'ROKAFSansMedium', sans-serif;
+  margin: 20px 0 10px 0;
+  font-size: 20px;
+}
+.modalContainer .movieImg {
+  width: 300px;
+  height: auto;
+  margin: 10px auto 20px;
+}
+
+.modalContainer .movieDesc {
+  margin: 20px 0 0 0;
+}
+.movieDesc > p {
+  line-height: 1.5rem;
+}
+.check {
+  position: relative;
+  margin-left: 22px;
+}
+.check::before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: -22px;
+  width: 20px;
+  height: 20px;
+  background-image: url('../assets/check.png');
+  background-size: cover;
+}
+.modalContainer .titles {
+  line-height: 1.5rem;
+}

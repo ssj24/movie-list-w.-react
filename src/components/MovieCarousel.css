@@ -1,0 +1,95 @@
+.carouselContainer {
+  width: 100%;
+  height: 240px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+.carouselContainer .movieContainer{
+  width: 270px;
+  height: 210px;
+  padding: 10px;
+  margin: 10px;
+  transition: all 250ms linear;
+}
+.carouselContainer .movieContainer::-webkit-scrollbar,
+.carouselContainer .movieContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.carouselContainer .movieImg {
+  width: 100px;
+  margin: auto;
+}
+.carouselContainer .movieDesc {
+  text-align: left;
+  margin: 10px 10px;
+}
+.carouselContainer .movieName {
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.carouselContainer .movieInfo {
+  width: 20ch;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.carouselContainer .movieInfo > span {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.btn {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+  z-index: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  font-size: 25px;
+  color:#00b8ff;
+}
+
+.btn:active {
+  transform: scale(1.1);
+}
+
+.btn:disabled {
+  color: #b0b0b0;
+  cursor: not-allowed;
+}
+.btn:disabled:active {
+  transform: none;
+}
+
+.btn-prev {
+  top: 45%;
+  left: 2%;
+}
+
+.btn-next {
+  top: 45%;
+  right: 2%;
+}
+
+.btn img {
+  width: 100%;
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .btn-prev, .btn-next {
+    display: none;
+  }
+}

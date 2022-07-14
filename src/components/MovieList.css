@@ -1,0 +1,100 @@
+.movieListContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1 {
+  font-family: 'ROKAFSansMedium', sans-serif;
+  font-size: 25px;
+  width: 100%;
+  text-align: start;
+  margin-bottom: 10px;
+  color: #00b8ff;
+}
+.movieContainer {
+  width: 100%;
+  height: 280px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+.movie-shadow {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.movie-shadow:hover {
+  box-shadow: rgba(0, 184, 255, 0.25) 0px 2px 4px 0px inset;
+  cursor: pointer;
+}
+.movieImg {
+  width: 100px;
+}
+.movieDesc {
+  text-align: left;
+  margin: 10px 10px;
+  border-radius: none;
+}
+
+.descFirst {
+  position: relative;
+}
+
+.movieName {
+  font-size: 1.1em;
+  font-weight: 700;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.tooltip {
+  width: 100%;
+  text-align: center;
+  background-color: #00b8ff;
+  color: white;
+  font-size: 1.2em;
+  font-weight: 900;
+  position: absolute;
+  top: 0;
+  padding: 5px;
+  display: none;
+}
+
+.descFirst:hover .tooltip {
+  display: block;
+}
+
+.movieTags {
+  text-align: end;
+}
+
+.tag {
+  display: inline-block;
+  padding: 3px 5px;
+  margin-right: 3px;
+  margin-bottom: 3px;
+  border-radius: 0;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  font-weight: 900;
+  font-size: 0.8em;
+}
+
+.specPrice {
+  margin-left: 5px;
+  font-size: 0.9em;
+  color: orangered;
+}
+
+.movieInfo {
+  border-radius: none;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.notiP {
+  font-size: 1.13em;
+}
+
