@@ -51,7 +51,9 @@ json-server db.json --routes routes.json --port 8080
 
 ## 데모 사이트
 
-데모 사이트는 deploy 브랜치를 이용하여 띄웠습니다
+deploy 브랜치에서 코드를 수정한 뒤 netlify에서 띄웠습니다
+
+[데모 사이트로 가기](https://deploy--symphonious-beijinho-24920e.netlify.app/)
 
 
 
