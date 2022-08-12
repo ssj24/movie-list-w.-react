@@ -49,6 +49,12 @@ json-server db.json --routes routes.json --port 8080
 
 
 
+## 데모 사이트
+
+데모 사이트는 deploy 브랜치를 이용하여 띄웠습니다
+
+
+
 ## react-slick
 
 슬릭을 커스텀하여
