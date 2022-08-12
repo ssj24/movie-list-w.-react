@@ -1,10 +1,15 @@
 .carouselWrapper {
   position: relative;
 }
+
+.carouselWrapper h1 {
+  padding-left: 30px;
+}
+
 .carouselWrapper .filter {
   position: absolute;
   top: 0;
-  right: 0;
+  right: 30px;
   border: none;
   border-radius: 10px;
   background-color: inherit;
@@ -20,6 +25,7 @@
   /* overflow: hidden; */
   position: relative;
 }
+
 .carouselContainer .movieContainer{
   width: 270px;
   height: 210px;
