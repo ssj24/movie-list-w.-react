@@ -12,7 +12,7 @@ function App() {
       </header>
       <ErrorBoundary>
         <Routes>
-          <Route path="/list" element={
+          <Route path="/movie" element={
               <MovieList />
           }/>
         </Routes>

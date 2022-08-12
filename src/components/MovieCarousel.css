@@ -1,8 +1,23 @@
+.carouselWrapper {
+  position: relative;
+}
+.carouselWrapper .filter {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: none;
+  border-radius: 10px;
+  background-color: inherit;
+  padding: 10px;
+  cursor: pointer;
+}
+
 .carouselContainer {
   width: 100%;
   height: 240px;
   display: flex;
-  overflow: hidden;
+  flex-direction: column;
+  /* overflow: hidden; */
   position: relative;
 }
 .carouselContainer .movieContainer{
@@ -33,7 +48,7 @@
   text-overflow: ellipsis;
 }
 .carouselContainer .movieInfo {
-  width: 20ch;
+  width: 15ch;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -86,6 +101,37 @@
 
 .btn img {
   width: 100%;
+}
+
+.container {
+  width: 90%;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.slide {
+  width: 200px;
+  height: 300px;
+  margin: 0 10px;
+}
+.slide p {
+  height: 270px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.progressBar {
+  width: 80%;
+  height: 20px;
+  margin: auto;
+  border-radius: 10px;
+  border: 3px solid #00b8ff;
+}
+.innerBar {
+  width: 100%;
+  height: 100%;
+  background-color: #00b8ff;
+  border-radius: 5px;
 }
 
 @media (hover: none) and (pointer: coarse) {
