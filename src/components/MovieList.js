@@ -20,6 +20,7 @@ const MovieList = () => {
   useEffect(() => {
     setLoading(true);
     callData();
+    // eslint-disable-next-line
   }, []);
   useEffect(() => {
     let ans = disp ? ['hidden', 'no'] : ['auto', 'yes'];

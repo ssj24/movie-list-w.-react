@@ -10,6 +10,7 @@ const MovieModal = ({setDisp, id}) => {
   useEffect(() => {
     setLoading(true);
     loadDir();
+    // eslint-disable-next-line
   }, []);
 
   const loadDir = () => {
