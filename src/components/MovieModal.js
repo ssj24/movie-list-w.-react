@@ -11,10 +11,12 @@ const MovieModal = ({setDisp, id}) => {
     setLoading(true);
     loadDir();
   }, []);
+
   const loadDir = () => {
-    axios.get(`http://localhost:8080/Movies/${id}`)
+    axios.get(`../../db.json`)
       .then(response => {
-        setDir(response.data[0]);
+        let director = response.data.Directors.filter(data => data.directorId === id);
+        setDir(director[0]);
         setLoading(false);
       })
       .catch(err => {

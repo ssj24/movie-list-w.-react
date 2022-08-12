@@ -5,6 +5,9 @@ import right from '../assets/right.png';
 
 const Pagination = ({ total, limit, page, setPage }) => {
   const numPages = Math.ceil(total / limit);
+  let style = {
+    width: '15%'
+  };
   return (
     <div>
       <nav>
@@ -19,6 +22,7 @@ const Pagination = ({ total, limit, page, setPage }) => {
               onClick={() => setPage(i + 1)}
               aria-current = {page === i + 1 ? "page" : null}
               className="btn"
+              style={style}
             >
               {i + 1}
             </button>

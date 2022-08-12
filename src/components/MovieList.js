@@ -30,9 +30,9 @@ const MovieList = () => {
     style: 'decimal',
   });
   const callData = async () => {
-    await axios.get('http://localhost:8080/Movies')
+    await axios.get('../../db.json')
       .then(async response => {
-        setMovies(response.data.map((movie) => 
+        setMovies(response.data.Movies.map((movie) => 
           <div
             key={movie.id}
             className="movieContainer movie-shadow"
@@ -61,8 +61,8 @@ const MovieList = () => {
             </div>
           </div>
         ))
-        setSaleMovies(response.data.filter((movie) => {
-          if (movie.discount >= 30) {
+        setSaleMovies(response.data.Movies.filter((movie) => {
+          if (movie.discount >= 50) {
             return true
           }
           return false
